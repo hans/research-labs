@@ -3,3 +3,6 @@ From: ufoym/deepo:all-py36-cpu
 
 %environment
 	XDG_RUNTIME_DIR=
+
+%post
+	pip --no-cache-dir install seaborn statsmodels
