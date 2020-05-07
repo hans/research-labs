@@ -38,7 +38,7 @@ RUN conda install --quiet --yes \
     'rpy2=3.1*' \
     && \
     conda install -qy -c conda-forge r-brms && \
-    pip install 'tensorflow==2.1.0' nltk spacy regex \
+    pip install 'tensorflow==2.1.0' nltk spacy regex && \
     jupyter labextension install @jupyterlab/toc && \
     conda clean --all -f -y && \
     fix-permissions $CONDA_DIR && \
